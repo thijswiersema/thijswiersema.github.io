@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind utilities;
+
+body {
+    @apply bg-tlgrey
+}
+
+header::before,
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 6px 12px rgba(121, 106, 100, 0.8);
+  z-index: -1;
+}
+
+header::before {
+  left: 14px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+header::after {
+  right: 14px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+h1 {
+    font-family: 'Marvel', sans-serif;
+}
+
+footer {
+    font-family: 'Offside', cursive;
+    /* background-color: #d3c9ad; */
+    @apply bg-tbrown
+}
