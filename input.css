@@ -32,6 +32,5 @@ h1 {
 
 footer {
     font-family: 'Offside', cursive;
-    /* background-color: #d3c9ad; */
     @apply bg-tbrown
 }
